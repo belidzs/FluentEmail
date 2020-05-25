@@ -15,6 +15,7 @@ namespace FluentEmail.Core.Models
         public string PlaintextAlternativeBody { get; set; }
         public Priority Priority { get; set; }
         public List<string> Tags { get; set; }
+        public bool TestMode { get; set; }
 
         public bool IsHtml { get; set; }
         public Dictionary<string, string> Headers { get; set; }
