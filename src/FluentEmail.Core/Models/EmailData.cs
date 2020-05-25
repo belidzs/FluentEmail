@@ -15,6 +15,7 @@ namespace FluentEmail.Core.Models
         public string PlaintextAlternativeBody { get; set; }
         public Priority Priority { get; set; }
         public List<string> Tags { get; set; }
+        public Dictionary<string, string> Variables { get; set; }
 
         public bool IsHtml { get; set; }
         public Dictionary<string, string> Headers { get; set; }
@@ -27,6 +28,7 @@ namespace FluentEmail.Core.Models
             ReplyToAddresses = new List<Address>();
             Attachments = new List<Attachment>();
             Tags = new List<string>();
+            Variables = new Dictionary<string, string>();
             Headers = new Dictionary<string, string>();
         }
     }
